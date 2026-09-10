@@ -324,7 +324,7 @@
         ]
       }
     ],
-    "as_of": 1789034500.8348737
+    "as_of": 1789035103.6993945
   },
   "status": "live",
   "rows": [
@@ -355,7 +355,7 @@
     }
   ],
   "published_at": null,
-  "as_of": 1789034500.8348737,
+  "as_of": 1789035103.6993945,
   "minimum_settled_bets": 10,
   "counting": "buy_orders"
 }
