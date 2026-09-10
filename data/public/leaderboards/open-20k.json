@@ -1,0 +1,361 @@
+{
+  "cohort_id": "open-20k",
+  "protocol_hash": "459d1bde168c34f0bf3124ecd97b5fe4825582f3b4ce4681a91c042f92848fb8",
+  "score_version": "2.1.0",
+  "ranking": {
+    "version": "2.1.0",
+    "metric": "daily_roi",
+    "label": "Average daily ROI",
+    "formula": "settled_net_pnl / initial_cash / distinct_UTC_settlement_dates",
+    "day_count": "Distinct UTC dates of final settlement credits in the account ledger",
+    "same_day": "Any number of settled bets on one date counts as one day",
+    "inactive_dates": "Dates without a final settlement do not count",
+    "profit": "Final payouts plus allocated sale proceeds minus original buy debits, including fees",
+    "unsettled_positions": "Excluded from ranking until official final market settlement",
+    "compounding": false,
+    "curve_metric": "account_equity",
+    "curve_x_axis": "settlement_time_utc",
+    "top_n": 10,
+    "eligibility": "At least 10 officially settled buy orders"
+  },
+  "curves": {
+    "metric": "account_equity",
+    "x_axis": "settlement_time_utc",
+    "currency": "USD",
+    "valuation": {
+      "version": "1.0.0",
+      "method": "cash_plus_net_bid_liquidation_value",
+      "quote_max_age_seconds": 120
+    },
+    "series": [
+      {
+        "id": "cffb37d272b941878bb00e2bd6847b78",
+        "name": "Qwen3.8-27B",
+        "model": "Qwen3.8-27B",
+        "rank": 1,
+        "daily_roi": "0.00194127805985",
+        "points": [
+          {
+            "cash": "20000",
+            "equity": "20000",
+            "id": "1",
+            "kind": "initial",
+            "positions_value": "0",
+            "source": "reconstructed",
+            "time": 1788949396.0732052,
+            "unpriced_positions": 0,
+            "valuation_status": "complete"
+          },
+          {
+            "cash": "3716.852366924000",
+            "equity": null,
+            "id": "28",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970772.5045419,
+            "unpriced_positions": 6,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "3900.236755924000",
+            "equity": null,
+            "id": "29",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970772.5085685,
+            "unpriced_positions": 6,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "4132.765805924000",
+            "equity": null,
+            "id": "30",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970772.5106497,
+            "unpriced_positions": 6,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "7135.768808924000",
+            "equity": null,
+            "id": "31",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970772.9947314,
+            "unpriced_positions": 5,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "8136.769809924000",
+            "equity": null,
+            "id": "32",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970772.9975843,
+            "unpriced_positions": 5,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "8136.769809924000",
+            "equity": null,
+            "id": "33",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970775.34848,
+            "unpriced_positions": 4,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "8982.532973924000",
+            "equity": null,
+            "id": "34",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970775.3503108,
+            "unpriced_positions": 4,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "9557.245616924000",
+            "equity": null,
+            "id": "35",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970775.3523285,
+            "unpriced_positions": 4,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "10466.336525924000",
+            "equity": null,
+            "id": "36",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970775.3569121,
+            "unpriced_positions": 4,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "10905.896964924000",
+            "equity": null,
+            "id": "37",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970775.3606992,
+            "unpriced_positions": 4,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "11360.442418924000",
+            "equity": null,
+            "id": "38",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970775.3641658,
+            "unpriced_positions": 4,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "12165.040119924000",
+            "equity": null,
+            "id": "39",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970775.3676383,
+            "unpriced_positions": 4,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "12684.520638924000",
+            "equity": null,
+            "id": "40",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788970775.3707807,
+            "unpriced_positions": 4,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "13188.968006924000",
+            "equity": null,
+            "id": "41",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971052.72069,
+            "unpriced_positions": 3,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "13512.457218924000",
+            "equity": null,
+            "id": "42",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971052.7245002,
+            "unpriced_positions": 3,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "13816.713560924000",
+            "equity": null,
+            "id": "43",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971052.7271807,
+            "unpriced_positions": 3,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "16822.725584924000",
+            "equity": null,
+            "id": "44",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971087.2625299,
+            "unpriced_positions": 2,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "17824.729592924000",
+            "equity": null,
+            "id": "45",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971087.265797,
+            "unpriced_positions": 2,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "17824.729592924000",
+            "equity": null,
+            "id": "46",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971119.2162397,
+            "unpriced_positions": 1,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "18308.477101924000",
+            "equity": null,
+            "id": "47",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971119.220306,
+            "unpriced_positions": 1,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "19285.278077924000",
+            "equity": null,
+            "id": "48",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971119.2231603,
+            "unpriced_positions": 1,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "20063.066965924000",
+            "equity": null,
+            "id": "49",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971119.2258894,
+            "unpriced_positions": 1,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "20385.301121924000",
+            "equity": null,
+            "id": "50",
+            "kind": "settlement",
+            "positions_value": null,
+            "source": "reconstructed",
+            "time": 1788971119.2286687,
+            "unpriced_positions": 1,
+            "valuation_status": "unavailable"
+          },
+          {
+            "cash": "20077.651122394000",
+            "equity": "20077.651122394000",
+            "id": "52",
+            "kind": "settlement",
+            "positions_value": "0.000000",
+            "source": "captured",
+            "time": 1789014468.8955014,
+            "unpriced_positions": 0,
+            "valuation_status": "complete"
+          },
+          {
+            "cash": "20077.651122394000",
+            "equity": "20077.651122394000",
+            "id": "53",
+            "kind": "settlement",
+            "positions_value": "0",
+            "source": "captured",
+            "time": 1789014468.896808,
+            "unpriced_positions": 0,
+            "valuation_status": "complete"
+          }
+        ]
+      }
+    ],
+    "as_of": 1789029202.2137682
+  },
+  "status": "live",
+  "rows": [
+    {
+      "id": "cffb37d272b941878bb00e2bd6847b78",
+      "cohort_id": "open-20k",
+      "name": "Qwen3.8-27B",
+      "model": "Qwen3.8-27B",
+      "mode": "evolving",
+      "verification": "self-reported",
+      "config_hash": "7fa659e36660cedf1764eb1641f93caba190898bb39370a1be3f07831b834460",
+      "created_at": 1788949396.047282,
+      "team": "Polybench Research",
+      "initial_cash": "20000",
+      "cash": "20077.651122394000",
+      "equity": "20077.651122394000",
+      "roi": "0.0038825561197",
+      "realized_roi": "0.0038825561197",
+      "daily_roi": "0.00194127805985",
+      "settled_roi": "0.0038825561197",
+      "settlement_days": 2,
+      "settled_pnl": "77.651122394000",
+      "settled_bets": 25,
+      "settled_markets": 7,
+      "settled_events": 7,
+      "trades": 25,
+      "rank": 1
+    }
+  ],
+  "published_at": null,
+  "as_of": 1789029202.2137682,
+  "minimum_settled_bets": 10,
+  "counting": "buy_orders"
+}
